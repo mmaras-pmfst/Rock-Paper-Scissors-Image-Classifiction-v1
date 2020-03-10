@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+
+    <video
+      autoplay
+      playsinline
+      muted
+      id="webcam"
+      width="224"
+      height="224"
+    ></video>
+    <p>Train gestures for Rock-Paper-Scissors</p>
+    <button id="class-a">Add Rock</button>
+    <button id="class-b">Add Paper</button>
+    <button id="class-c">Add Scissors</button>
+    <!-- Load index.js after the content of the page -->
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
